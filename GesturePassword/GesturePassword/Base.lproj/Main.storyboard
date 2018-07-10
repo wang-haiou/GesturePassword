@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VI8-Ol-yxT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EBangKe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEV-nW-IOE">
+                                <rect key="frame" x="141" y="176" width="92" height="30"/>
+                                <state key="normal" title="设置手势密码">
+                                    <color key="titleColor" red="0.82745098039999998" green="0.21176470589999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setingClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vfh-cx-TaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta9-pk-gXE">
+                                <rect key="frame" x="141" y="307" width="92" height="30"/>
+                                <state key="normal" title="登录手势密码">
+                                    <color key="titleColor" red="0.82745098039999998" green="0.21176470589999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8C-pT-Utn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRc-gk-ybw">
+                                <rect key="frame" x="141" y="244" width="92" height="30"/>
+                                <state key="normal" title="更新手势密码">
+                                    <color key="titleColor" red="0.82745098039999998" green="0.21176470589999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sth-vj-lMe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lEV-nW-IOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXO-bq-rQJ"/>
+                            <constraint firstItem="jRc-gk-ybw" firstAttribute="top" secondItem="lEV-nW-IOE" secondAttribute="bottom" constant="38" id="YEH-wD-fTT"/>
+                            <constraint firstItem="lEV-nW-IOE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="lCL-xy-UGF"/>
+                            <constraint firstItem="Ta9-pk-gXE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntp-ML-Zl0"/>
+                            <constraint firstItem="jRc-gk-ybw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBO-T5-KO5"/>
+                            <constraint firstItem="Ta9-pk-gXE" firstAttribute="top" secondItem="jRc-gk-ybw" secondAttribute="bottom" constant="33" id="zXd-GQ-zfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dGt-Dk-dk9">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666.39999999999998" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fmy-r1-3uW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VI8-Ol-yxT" customClass="UNavigationController" customModule="EBangKe" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pgP-iG-hh3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ae9-oK-eRx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aE-kr-0rt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="117"/>
+        </scene>
+    </scenes>
+</document>
